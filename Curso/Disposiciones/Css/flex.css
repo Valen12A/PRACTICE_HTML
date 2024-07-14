@@ -1,0 +1,25 @@
+.flex {
+    display: flex;
+    background-color: blueviolet;
+    height: 300px;
+    justify-content: space-between;
+}
+
+.flex1 {
+    background-color: black;
+    height: 200px;
+    width: 100px;
+    border: 1px solid blueviolet
+}
+.flex2 {
+    background-color: black;
+    height: 200px;
+    width: 100px;
+    border: 1px solid blueviolet
+}
+.flex3 {
+    background-color: black;
+    height: 200px;
+    width: 100px;
+    border: 1px solid blueviolet
+}
