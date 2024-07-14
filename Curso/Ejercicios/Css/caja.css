@@ -1,0 +1,93 @@
+.main1 {
+    width: 600px;
+    height: 600px;
+    background: #000;
+    border: 15px solid #000;
+    /* padding: 20px; */
+    /* margin: 50px; */
+    box-sizing: border-box;
+    /* top: 100px; */
+    position:relative;
+    /* display: inline-block; */
+}
+
+.seccion-1{
+    width: 180px;
+    height: 180px;
+    background: rgb(211, 47, 248);
+    position: absolute;
+    top: 0px;
+    left:0px;
+}
+
+.seccion-2{
+    width: 180px;
+    height:180px;
+    background: rgb(211, 47, 248);
+    position: absolute;
+    top: 0px;
+    right: 0;
+}
+
+.seccion-3{
+    width: 180px;
+    height: 180px;
+    background: rgb(211, 47, 248);
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+}
+
+.seccion-4{
+    width: 180px;
+    height: 180px;
+    background: rgb(211, 47, 248);
+    position: absolute;
+    bottom: 0px;
+    left: 0px; 
+}
+
+.seccion-5{
+    width: 180px;
+    height: 180px;
+    background: rgb(211, 47, 248);
+    position: absolute;
+    top: 195px;
+    left: 0px; 
+}
+
+.seccion-6{
+    width: 180px;
+    height: 180px;
+    background: rgb(211, 47, 248);
+    position: absolute;
+    top: 0px;
+    left: 195px; 
+}
+
+.seccion-7{
+    width: 180px;
+    height: 180px;
+    background: rgb(211, 47, 248);
+    position: absolute;
+    top: 195px;
+    left: 195px; 
+}
+
+.seccion-8{
+    width: 180px;
+    height: 180px;
+    background: rgb(211, 47, 248);
+    position: absolute;
+    bottom: 0px;
+    left: 195px; 
+}
+
+.seccion-9{
+    width: 180px;
+    height: 180px;
+    background: rgb(211, 47, 248);
+    position: absolute;
+    top:195px;
+    right: 0px; 
+}
