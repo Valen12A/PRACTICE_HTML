@@ -159,3 +159,8 @@ footer ul li a {
 footer ul:hover{
     cursor: pointer;
 }
+@media (max-width: 555px) {
+    .footer-left, .footer-right, .main {
+      flex-direction: column;
+    }
+  }
