@@ -1,0 +1,37 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+thead th {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+}
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+tbody td {
+    text-align: center;
+}
+tfoot td {
+    background-color: #f8f9fa;
+    text-align: center;
+    font-weight: bold;
+}
+.table-primary {
+    background-color: #cfe2ff !important;
+}
+.table-success {
+    background-color: #d1e7dd !important;
+}
+.table-danger {
+    background-color: #f8d7da !important;
+}
+caption {
+    font-size: 1.5em;
+    margin: .5em 0;
+    text-align: center;
+}
+footer {
+    position: absolute;
+}
