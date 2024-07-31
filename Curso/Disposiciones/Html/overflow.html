@@ -1,23 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
+</html><!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>overflow</title>
-    <link rel="stylesheet" href="CCS/overflow.css">
+    <title>Tipos de Overflow en CSS</title>
+    <link rel="stylesheet" href="../Css/Overflow.css">
 </head>
 <body>
-    <div class="contenerdor"></div>
-    <p>hola laksukj</p>
+    <h1>Tipos de Overflow en CSS</h1>
 
-    <div class="contenerdor2"></div>
-    <p>hola laksukj</p>
+    <div class="container">
+        <h2>Overflow Visible</h2>
+        <div class="box visible">
+            <div class="box-content">
+                <p>Este es un ejemplo de overflow: visible. El contenido que desborda la caja es visible.</p>
+            </div>
+        </div>
+    </div>
 
-    <div class="contenerdor3"></div>
-    <p>hola laksukj</p>
+    <div class="container">
+        <h2>Overflow Hidden</h2>
+        <div class="box hidden">
+            <div class="box-content">
+                <p>Este es un ejemplo de overflow: hidden. El contenido que desborda la caja está oculto.</p>
+            </div>
+        </div>
+    </div>
 
-    <div class="contenerdor4"></div>
-    <p>hola laksukj</p>
+    <div class="container">
+        <h2>Overflow Scroll</h2>
+        <div class="box scroll">
+            <div class="box-content">
+                <p>Este es un ejemplo de overflow: scroll. Siempre se muestran las barras de desplazamiento, sin importar si el contenido desborda o no.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Overflow Auto</h2>
+        <div class="box auto">
+            <div class="box-content">
+                <p>Este es un ejemplo de overflow: auto. Las barras de desplazamiento aparecen solo si el contenido desborda la caja.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

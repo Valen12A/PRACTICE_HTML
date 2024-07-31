@@ -1,31 +1,57 @@
-.div{
-    border: 1px solid gray;
-    padding: 5px;
-    margin: 5px;
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
 }
-
-.relative{
-    position:relative;
-    left: 80px;
-    margin-left: 10px;
-
+.container {
+    border: 2px solid #000;
+    padding: 20px;
+    margin-bottom: 20px;
 }
-
-.fixed{
-    position: fixed;
-    bottom: 0px;
-    left: opx;
-    background-color: brown;
-    z-index: 10;
+.box {
+    width: 100px;
+    height: 100px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+    position: relative;
+    margin: 10px;
 }
-
-.absolute{
+.static {
+    background-color: #3498db;
+}
+.relative {
+    background-color: #2ecc71;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+.absolute {
+    background-color: #e74c3c;
     position: absolute;
-    top: 0px
-
+    top: 50px;
+    left: 50px;
 }
-
-.sticky {
-    position: sticky;
-    background-color: slateblue;
+.fixed {
+    background-color: #f39c12;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+.relative-container {
+    position: relative;
+    height: 200px;
+    border: 2px dashed #666;
+    margin-bottom: 20px;
+}
+.absolute-container {
+    position: relative;
+    height: 200px;
+    border: 2px dashed #666;
+    margin-bottom: 20px;
+}
+.fixed-container {
+    position: relative;
+    height: 200px;
+    border: 2px dashed #666;
 }

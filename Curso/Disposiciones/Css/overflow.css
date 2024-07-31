@@ -1,34 +1,42 @@
-.contenerdo{
-    background-color: bisque;
-    width: 300px;
-    height: 100px;
-    padding: 15px;
-    overflow: hidden;          /*todo lo que sobre salga se oculte*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
 }
-
-.contenerdo1{
-    margin: 10px 0px;
-    background-color: bisque;
-    width: 300px;
-    height: 100px;
-    padding: 15px;
-    overflow: scroll;          
+.container {
+    border: 2px solid #000;
+    padding: 10px;
+    margin-bottom: 20px;
 }
-
-.contenerdo3{
-    margin: 10px 0px;
-    background-color: bisque;
-    width: 300px;
+.box {
+    width: 200px;
     height: 100px;
-    padding: 15px;
+    padding: 10px;
+    color: white;
+    background-color: #3498db;
+    overflow: hidden;
+    position: relative;
+    margin: 10px;
+}
+.box-content {
+    height: 150px; /* Hacer el contenido más alto que la caja */
+}
+.visible {
     overflow: visible;
+    background-color: #3498db;
 }
-
-.contenerdo4{
-    margin: 10px 0px;
-    background-color: bisque;
-    width: 300px;
-    height: 100px;
-    padding: 15px;
-    overflow: auto;          
+.hidden {
+    overflow: hidden;
+    background-color: #2ecc71;
+}
+.scroll {
+    overflow: scroll;
+    background-color: #e74c3c;
+}
+.auto {
+    overflow: auto;
+    background-color: #f39c12;
+}
+.box-content p {
+    margin: 0;
+    padding: 0;
 }
