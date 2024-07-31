@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #2c3e50;
+    overflow: hidden;
+}
+
+.rain {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.drop {
+    position: absolute;
+    bottom: 100%;
+    width: 2px;
+    height: 20px;
+    background: #3498db;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+/* Generar múltiples gotas de lluvia con diferentes animaciones */
+.drop:nth-child(1) {
+    left: 10%;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+}
+
+.drop:nth-child(2) {
+    left: 20%;
+    animation-duration: 0.7s;
+    animation-delay: 0.1s;
+}
+
+.drop:nth-child(3) {
+    left: 30%;
+    animation-duration: 0.6s;
+    animation-delay: 0.2s;
+}
+
+.drop:nth-child(4) {
+    left: 40%;
+    animation-duration: 0.8s;
+    animation-delay: 0.3s;
+}
+
+.drop:nth-child(5) {
+    left: 50%;
+    animation-duration: 0.9s;
+    animation-delay: 0.4s;
+}
+
+.drop:nth-child(6) {
+    left: 60%;
+    animation-duration: 0.6s;
+    animation-delay: 0.5s;
+}
+
+.drop:nth-child(7) {
+    left: 70%;
+    animation-duration: 0.7s;
+    animation-delay: 0.6s;
+}
+
+.drop:nth-child(8) {
+    left: 80%;
+    animation-duration: 0.8s;
+    animation-delay: 0.7s;
+}
+
+.drop:nth-child(9) {
+    left: 90%;
+    animation-duration: 0.5s;
+    animation-delay: 0.8s;
+}
+
+.drop:nth-child(10) {
+    left: 95%;
+    animation-duration: 0.9s;
+    animation-delay: 0.9s;
+}
