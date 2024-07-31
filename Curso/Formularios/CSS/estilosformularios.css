@@ -1,64 +1,82 @@
-.input {
-    width: 100%;
-    padding: 5px 10px;
-    border: 2px solid green;
-    border-radius: 10px;
-    margin-bottom: 10px;
+/* Archivo: ../CSS/estilosformularios.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
 }
 
-.input [type="password"]{
-    color: brown;
-}
-
-.input-moderno{
-    border: none;
-    border-bottom: 1px solid rgb(147, 147, 147);
-    outline: none;
-    padding: 5px ;
-    color: black;
-}
-
-.input-moderno::placeholder{
-    color: brown;
-}
-
-.input-moderno:focus{
-    border-bottom: 1px solid black;
-}
-
-.input-background{
-    background-color: aquamarine;
-    border:none;
-    border-radius: 5xp;
-    padding: 5px 10px;
-    outline: none;
-    color:rgb(147, 147, 147)
-    box-shadow 0 0 10px ;
-}
-
-.input-background::placeholder{
-    color: blanchedalmond;
-}
-
-.input-search{
-    padding: 10px;
-    padding-left: 30px;
-    border: none;
-    background-color: gray;
+form {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
     border-radius: 8px;
-    margin: 10px;
-    background-image: url('.../imagen');
-    background-repeat: no-repeat;
-    background-position: 15pxx;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input,
+.input-moderno,
+.input-background,
+.input-search,
+textarea,
+select {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.input {
+    border: 1px solid #ccc;
+}
+
+.input-moderno {
+    border: 2px solid #007bff;
+    background-color: #f0f8ff;
+    transition: border-color 0.3s ease;
+}
+
+.input-moderno:focus {
+    border-color: #0056b3;
+}
+
+.input-background {
+    background-color: #e9ecef;
+    border: none;
+}
+
+.input-search {
+    border: 1px solid #007bff;
+    background-color: #fff;
+}
+
+input[type="text"]::placeholder,
+textarea::placeholder {
+    color: #888;
+    font-style: italic;
 }
 
 textarea {
-    resize: none;
+    height: 100px;
+    resize: vertical;
 }
 
-select{
-    width: 100%;
-    padding: 15px;
-    background-color: #ccc;
+select {
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
 
+select option {
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    form {
+        padding: 10px;
+    }
 }

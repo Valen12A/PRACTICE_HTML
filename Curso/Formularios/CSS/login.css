@@ -1,150 +1,133 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,500&display=swap');
+/* Archivo: ../CSS/login.css */
 
-*{
-    font-family: 'Lora', sans-serif;
-
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.container{
-    margin: auto;
-    display: flext;
+.contenedor {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.botones {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    width: 450px;
-
+    gap: 10px;
 }
 
-.google-btn{
-    background-color: #1A73E8;
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.google-btn {
+    background-color: #db4437;
     color: white;
-    border: none;
-    border-radius: 5px;
-    height: 40px;
-    align-items: center;
-    padding: 2px;
-    cursor:  pointer;
-    
 }
 
-.botones{
-    align-self: flex-start;
-    display: flex;
-    gap: 20px;
+.google-btn:hover {
+    background-color: #c1351d;
 }
 
-.google-btn:hover{
-    opacity: 0.75;
+.google-btn picture {
+    margin-right: 10px;
 }
 
-.google-btn picture{
-    width: 36px;
-    height: 36px;
-    background-color: white;
-    border-radius: 2px;
+.twitter-btn {
+    background-color: #1da1f2;
+    color: white;
+}
+
+.twitter-btn:hover {
+    background-color: #0d95e8;
+}
+
+.separador {
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin: 20px 0;
 }
 
-.google-btn picture img{
-    width: 75%;
-}
-
-.google-btn span{
-    color:white;
-    font-weight: 500;
-    padding: 15px;
-
-}
-
-.twitter-btn{
-    color: #bbb;
-    background-color: #eee;
+.separador hr {
+    flex: 1;
     border: none;
-    width: 40px;
-    border-radius: 5px;
+    border-top: 1px solid #ddd;
+}
+
+.separador span {
+    margin: 0 10px;
+    color: #666;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
     cursor: pointer;
 }
 
-.twitter-btn:hover{
-    background-color: #ddd;
-}
-
-.separador{
-    display: flex;
-    width: 100%;
-    gap: 15px;
-
-}
-
-.separador hr{
-    flex-grow: 1;
-    border:none;
-    border-top: 1px solid #ccc;
-
-}
-
-.separador span{
-    color: #8b8b8b;
-}
-
-.seciones-input{
-    display:flex;
-    gap: 10px;
-    width: 100%;
-}
-
-form{
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 20px;
-}
-
-label{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-label span{
-    font-weight: 700;
-}
-
-label input{
-    width: 80%;
-    background-color: #f3f3f4;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    outline: none;
-    font-size: 14pt;
-    transition: background-color 0.2s border 0.2s box-shadow 0.2s;
-}
-
-label input:hover{
-    background-color: white;
-    border: solid 1px #f3f3f4;
-    box-shadow: 0 0 4px #eb50ff4f;
-}
-
-label input:focus{
-    background-color: white;
-    border: solid 1px #f3f3f4;
-    box-shadow: 0 0 4px #eb50ff4f;
-}
-
-.submit{
-    background-color: #EA4C89;
+.submit {
+    background-color: #007bff;
     color: white;
-    font-weight: 500;
-    font-size: 14px;
-    text-align: center;
-    padding: 15px;
-    border:none;
-    border-radius: 10px;
-    cursor:pointer;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
+.submit:hover {
+    background-color: #0056b3;
 }
